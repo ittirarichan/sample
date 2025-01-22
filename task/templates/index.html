@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search result</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+        {% csrf_token %}
+            <input type="number" name="number" id="" placeholder="number">
+            <button value="submit">Search</button>
+    </form>
+    </div>
+
+    <h1>result: {{ result }}</h1>
+</body>
+</html>
